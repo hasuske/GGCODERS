@@ -43,9 +43,17 @@ h2.titulo{
     text-align: center;
 }
 
-.especialidades .especialidades-box{
+.especialidades .especialidades-box .box   {
     cursor: pointer;
+    transition: .2s; 
 }
+.especialidades .especialidades-box :hover {
+    
+    transform: scale(1.05);
+
+}
+
+
 
 /* ESTILO HEADER */
 
@@ -125,7 +133,7 @@ section.topo-do-site .flex{
 /* MINHAS ESPECIALIDADES */
 
 section.especialidades{
-    padding: 40px 4%;
+    padding: 10px 4%;
 } 
 
 section.especialidades .flex{
@@ -140,18 +148,40 @@ section.especialidades .flex{
     transition: .2s;
 }
 
-/*.especialidades .especialidades-box :hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #3d3c3c;
-}*/
 
 .especialidades .especialidades-box i{
     font-size: 70px;
     color: blueviolet;
 }
 
-.especialidades .especialidades-box h3{
+.especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
+/*  
+
+Criei essas classes para testar a resolução no site, mas não ficou bem dimensionado.
+Como criei mais uma div para interagir com a caixa, ela aumentou o tamanho na tela e a barra de rolagem
+interage agora. Não atrapalha a visualização mas pode acabar sendo algo pra vermos depois como construir tudo
+numa pagina
+
+.especialidades .especialidades-box .box {
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.especialidades .especialidades-box .box i {
+    font-size: 70px;
+    color: blueviolet;
+
+}
+
+.especialidades .especialidades-box .box h3 {
+    font-size: 28px;
+    margin: 10px 0;
+
+}*/ 

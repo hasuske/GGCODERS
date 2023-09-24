@@ -1,0 +1,399 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+.btn-contato  button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s; 
+}
+
+ button:hover , form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+
+
+
+/* ESTILO HEADER */
+
+header {
+
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+}
+
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav.menu-desktop ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Mobile links*/
+section .interface .flex .links-mobile{
+    display: none;
+}
+/* ESTILO DO TOPO DO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+.txt-topo-site h1{
+    color: aliceblue;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+/* MINHAS ESPECIALIDADES */
+
+/* Estilo especialidaes*/
+
+section.especialidades{
+    padding: 40px 4%;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+
+}
+
+.especialidades .box{
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2S;
+
+}
+
+.especialidades .box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(173, 129, 214);
+}
+
+.especialidades .box i{
+    font-size: 70px;
+    color: blueviolet;
+
+}
+
+.especialidades .box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+
+/* Portfolio */
+
+section.portfolio {
+    padding: 80px 4%;
+   
+    
+}
+
+section.portfolio .flex{
+    justify-content: space-around;
+    margin-top: 90px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+    
+}
+
+.img-port a{
+    color: white;
+    text-decoration: none;
+    
+
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+
+
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.623);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* Formulario*/
+
+section.formulario{
+    padding: 80px 4%;
+
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgba(71, 69, 69, 0.795);
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+
+
+}
+
+form textarea{
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 700px;
+
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: blueviolet;
+    color: black;
+    font-weight: 900px;
+    cursor: pointer;
+    transition: .2s;
+    
+}
+
+/* rodapé*/
+
+footer{
+    padding: 5px 4%;
+    margin-top: 100px;
+    
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 20px 0;
+}
+
+
+
+footer .line-footer p i{
+    color: blueviolet;
+    font-size: 22px;
+    
+}
+
+.borda{
+    border-top: 2px solid blueviolet;
+}
+
+footer .line-footer p a{
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1020px) {
+
+    .flex{
+        flex-direction: column-reverse;
+
+    }
+
+    .menu-desktop, .btn-contato{
+        display: none;
+
+    }
+
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+
+    .txt-topo-site h1{
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    
+    section.especialidades{
+    padding: 40px 8%;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    section .portfolio{
+        padding: 80px 8%;
+    }
+
+    .img-port {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+
+    }
+    section.portfolio .flex{
+        gap: 60px;
+    }
+
+    section .interface .flex .links-mobile {
+        display: block;
+        padding: 40px 20%;
+        text-decoration: none;
+        justify-content: center;
+        
+
+        
+
+    }
+
+    section .interface .flex .links-mobile button{
+        text-align: center;
+        background-color: blueviolet;
+        color: white;
+        font-size: 14px;
+        justify-content: space-between;
+        border-radius: 60px ;
+        border: 0;
+        
+
+    }
+   
+
+    footer .flex {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+
+
+}

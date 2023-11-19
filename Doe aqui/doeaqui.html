@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="doeaqui.js"></script>
+    <title>Doe aqui</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Doe aqui_files/doeaqui-logo.jpg" alt="Logo-Doe-Aqui">
+                </a>
+            </div> <!---Logo do Site -->
+        
+
+            <nav class="menu-nav"> 
+                <ul>
+                    <li><a href=""><button>Doe Aqui</button></a></li>
+                    <li><a href="fale-consoco.html">Fale conosco</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                </ul>
+            </nav>
+
+             <div class="btn-entrar">
+                <a href="login.html"><button><p>Entrar</p></button></a>
+             </div>
+
+             <div class="btn-cadastro">
+                 <a href="cadastro.html"><button><p>Cadastre-se</p></button></a>
+             </div>
+        </div>
+        <div class="btn-doar" style="text-align: center;">
+            <br>
+            <h2 style="text-align: center;">Selecione um valor de doação:</h2><br>
+            <button onclick="selecionarValor(10)">R$10,00</button>
+            <button onclick="selecionarValor(20)">R$20,00</button>
+            <button onclick="selecionarValor(30)">R$30,00</button>
+            <button onclick="mostrarCampoOutroValor()">Outro valor</button>
+        </div>
+          
+          <form id="formDoacao">
+            <input type="text" id="valorDoacao" placeholder="Valor"
+            required>
+            <input type="text" id="cpf" placeholder="CPF" required>
+            <input type="text" id="nome" placeholder="Nome" required>
+            <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="telefone" placeholder="Telefone (opcional)">
+            <div class="btn-pag">
+                <select id="metodoPagamento">
+                  <option value="cartao">Cartão de Crédito</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="Boleto">Boleto</option>
+                  <option value="Pix">PIX</option>
+                  <!-- Adicione mais opções de pagamento, se necessário -->
+                </select>
+            </div>
+            <div class="btn-cadastro" style="text-align: center;"><button onclick="realizarDoacao()">Doar</button></div>
+          </form>
+          
+          <footer>
+            <div class="interface">
+                <div class="line-footer">
+                    
+                    <div class="flex">
+                            <div class="logo-footer">
+                                <img src="Doe aqui_files/doeaqui-logo.jpg" alt="">
+                            </div>
+                            
+                    </div>
+                </div>
+                <div class="line-footer borda">
+                    <p><i class="bi bi-envelope-at"></i> <a href="mailto:contato@ggcoders.com.uk">contato@ggcoders.com.uk</a></p>
+    
+                </div>
+            </div>
+        </footer>
+    </body>
+    </html>
